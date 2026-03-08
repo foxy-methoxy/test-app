@@ -3,6 +3,7 @@ import { useSnackbar } from '@/composables/useSnackbar'
 import AppNavbar from '@/components/layout/AppNavbar.vue'
 import { storeToRefs } from 'pinia'
 import { useAuthStore } from '@/stores/auth'
+import { SpeedInsights } from '@vercel/speed-insights/vue'
 
 const { show, message, type } = useSnackbar()
 const { isAuthenticated } = storeToRefs(useAuthStore())
@@ -15,6 +16,7 @@ const { isAuthenticated } = storeToRefs(useAuthStore())
     <v-snackbar v-model="show" :timeout="3000" :color="type">
       {{ message }}
     </v-snackbar>
+    <SpeedInsights />
   </v-app>
 </template>
 

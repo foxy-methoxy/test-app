@@ -37,3 +37,46 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# OS files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Package manager locks (pick one to keep, ignore others)
+yarn.lock
+# package-lock.json
+pnpm-lock.yaml
+
+# Build & cache
+.cache
+.parcel-cache
+.next
+.nuxt
+.output
+.turbo
+build/
+tmp/
+temp/
+
+# Testing
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Misc
+*.pem
+*.key
+*.cert
+*.zip
+*.tar.gz

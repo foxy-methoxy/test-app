@@ -15,6 +15,12 @@ const router = createRouter({
       meta: { requiresAuth: true },
     },
     {
+      path: '/profile',
+      name: 'profile',
+      component: () => import('@/views/ProfilePage.vue'),
+      meta: { requiresAuth: true },
+    },
+    {
       path: '/movies/:id',
       name: 'movie',
       component: () => import('@/views/movies/MovieView.vue'),

@@ -1,6 +1,5 @@
 <template>
-  <v-container class="mt-5">
-    <MoviesSearch class="mb-6" />
+  <v-container class="mt-15">
     <BaseTabs :tabs="tabs" v-model="activeTab" class="mb-4">
       <template #default="{ tab }">
         <MovieTabContent :category="tab" :key="tab" />
@@ -13,7 +12,6 @@ import { ref } from 'vue'
 import BaseTabs from '@/components/base/BaseTabs.vue'
 import { MovieCategory } from '@/types/movie'
 import MovieTabContent from '@/components/Movie/MovieTabContent.vue'
-import MoviesSearch from '@/components/Movie/MoviesSearch.vue'
 
 const activeTab = ref(MovieCategory.Popular)
 const tabs: MovieCategory[] = [
